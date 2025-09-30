@@ -282,15 +282,40 @@ main {
 
 @media (max-width:480px) {
   .logo-index a {
-    font-size: 12vw !important;
+    font-size: 8vw !important;
     letter-spacing: 4px;
   }
 
   .nav-bar-index a {
-    font-size: 8vw !important;
+    font-size: 5vw !important;
   }
 }
 
+@media (max-width: 900px) {
+    .site-banner-index {
+        bottom: 5%;
+        padding: 0;
+    }
+
+    .logo-index a {
+        font-size: 10vw !important;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .nav-bar-index a {
+        font-size: 6vw !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-index a {
+        font-size: 12vw !important;
+    }
+
+    .nav-bar-index a {
+        font-size: 7vw !important;
+    }
+}
 @font-face {
   font-family: "RAPSCALL";
   src: url("fonts/GermaniaOne-Regular.ttf") format("truetype");
