@@ -194,9 +194,9 @@ main {
     font-family: "RAPSCALL", sans-serif;
     text-decoration: none;
     font-size: 12rem;
-    color:#c1c7c0;
+    color:#e0e2df;
     -webkit-text-stroke: 2px black;
-    filter: blur(1.8px);
+    filter: blur(1.5px);
 }
 
 .logo-index a:hover {
@@ -282,7 +282,7 @@ main {
 
 @media (max-width:480px) {
   .logo-index a {
-    font-size: 12vw !important;
+    font-size: 14vw !important;
     letter-spacing: 4px;
   }
 
