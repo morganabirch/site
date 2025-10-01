@@ -351,16 +351,18 @@ main {
     font-size: 8vw !important;
   }
   .site-banner {
-        padding: 0.5rem;
+        padding: 0.4rem;
+        gap: 1rem; /* reduces space between logo and nav */
+        flex-wrap: wrap; /* keeps them together responsively */
     }
 
     .logo a {
-        font-size: 1.5rem;
+        font-size: 3rem;
         letter-spacing: 1px;
     }
 
     .nav-bar a {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
    
