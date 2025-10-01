@@ -5,15 +5,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Responsive Image Grid</title>
+    <title>Morgana Birch Art</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="site-banner">
+        <!-- Video background inside header -->
+        <video autoplay muted loop playsinline class="header-video">
+            <source src="vid/EYE-ribbon2.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
         <div class="logo">
             <!--<img src="logo url" alt="Logo" class="logo-img">-->
-            <a href="index.html"><h1>MORGANA BIRCH</h1></a>
+            <a href="index.html">
+                <h1>MORGANA BIRCH</h1>
+            </a>
         </div>
         <nav class="nav-bar">
             <a href="art.html">ART</a>
@@ -23,61 +31,74 @@
     </header>
 
 
+
     <main>
-        <section class="gallery" aria-label="Example image gallery">
+        <section class="gallery" aria-label="image gallery">
             <article class="card">
                 <div class="thumb">
-                    <img src="img/1.webp" alt="Placeholder image 1"
+                    <a href="morgan.html">
+                        <img src="img/Morgan-bw.webp" alt="Project 1"
                         loading="lazy">
-                    <div class="overlay"><span>Image 1</span></div>
+                    </a>
+                    <div class="overlay"><span>Morgan</span></div>
                 </div>
             </article>
 
 
             <article class="card">
                 <div class="thumb">
-                    <img src="img/2.webp" alt="Placeholder image 2"
-                        loading="lazy">
-                    <div class="overlay"><span>Image 2</span></div>
+                    <a href="drawings.html">
+                        <img src="img/lungs-dr-bw.webp" alt="Project 2"
+                            loading="lazy">
+                    </a>
+                    <div class="overlay"><span>Drawings</span></div>            
                 </div>
             </article>
 
 
             <article class="card">
                 <div class="thumb">
-                    <img src="img/3.webp" alt="Placeholder image 3"
+                    <a href="subspace.html">
+                    <img src="img/subspace-bw.webp" alt="Subspace Envoy
                         loading="lazy">
-                    <div class="overlay"><span>Image 3</span></div>
+                    <div class="overlay"><span>Subspace Envoy</span></div>
+                    </a>
                 </div>
             </article>
 
 
             <article class="card">
                 <div class="thumb">
-                    <img src="img/4.webp" alt="Placeholder image 4"
-                        loading="lazy">
-                    <div class="overlay"><span>Image 4</span></div>
+                    <a href="oubliette.html">
+                        <img src="img/oubliette-install-1-bw.webp" alt="Project 4"
+                            loading="lazy">
+                        <div class="overlay"><span>Oubliette</span></div>
+                    </a>
+                </div>
+            </article>
+
+            <!--
+            <article class="card">
+                <div class="thumb">
+                    <a href="project5.html">
+                        <img src="img/5.webp" alt="Project 5"
+                            loading="lazy">
+                        <div class="overlay"><span>Image 5</span></div>
+                    </a>
                 </div>
             </article>
 
 
             <article class="card">
                 <div class="thumb">
-                    <img src="img/5.webp" alt="Placeholder image 5"
-                        loading="lazy">
-                    <div class="overlay"><span>Image 5</span></div>
+                    <a href="project6.html">
+                        <img src="img/6.webp" alt="Placeholder image 6"
+                            loading="lazy">
+                        <div class="overlay"><span>Project 6</span></div>
+                    </a>
                 </div>
             </article>
-
-
-            <article class="card">
-                <div class="thumb">
-                    <img src="img/6.webp" alt="Placeholder image 6"
-                        loading="lazy">
-                    <div class="overlay"><span>Image 6</span></div>
-                </div>
-            </article>
-
+            -->
 
         </section>
     </main>
