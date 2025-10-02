@@ -273,16 +273,27 @@ main {
   transform: translateY(-50%);
   width: 35%;
   padding: 5rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent background for feathering */
+  font-family: "RAPSCALL", sans-serif;
   font-size: 2rem;
   border-radius: 10px;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-composite: intersect;
-  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+
+  /* Feathering mask with vendor prefixes */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent),
+                      linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-composite: destination-in;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent),
+              linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-repeat: no-repeat;
   mask-composite: intersect;
+  mask-size: cover;
+
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+
   border-radius: 0.5rem;
 }
 
