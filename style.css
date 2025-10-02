@@ -428,7 +428,7 @@ main {
 }
 
 @media (max-width: 480px) {
-  .carousel-slide img {
+  .carousel-slide img, video {
     max-height: 50vh;
   }
 
