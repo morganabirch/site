@@ -30,6 +30,12 @@ main {
   padding: 1rem;
 }
 
+@font-face {
+  font-family: "RAPSCALL";
+  src: url("fonts/GermaniaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .gallery {
   width: 100%;
   max-width: var(--max-width);
@@ -349,6 +355,7 @@ main {
   background: rgba(0, 0, 0, 0.8);
 }
 
+
 /* Responsive adjustments */
 @media (max-width:768px) {
   .site-banner-index {
@@ -547,10 +554,6 @@ main {
   }
 
   /* Custom font */
-  @font-face {
-    font-family: "RAPSCALL";
-    src: url("fonts/GermaniaOne-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-}
+} 
+
+
