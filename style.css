@@ -357,6 +357,45 @@ main {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.description-trigger {
+  text-align: center;
+  margin: 1rem 0;
+}
+.toggle-word {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+  font-family: "RAPSCALL", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.toggle-word:hover{
+  color: rgb(214, 255, 190);
+  cursor: pointer;
+  
+  text-decoration: none;
+}
+.description-box {
+  position: absolute;
+  top: 10%;              /* adjust placement */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;           /* above carousel images/videos */
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  color: white;
+  max-width: 80%;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
 
 /* Responsive adjustments */
 @media (max-width:768px) {
@@ -529,6 +568,15 @@ main {
     .carousel-btn:hover {
       background: rgba(0, 0, 0, 0.8);
     }
+
+    .description-box {
+      font-size: 1rem;
+    }
+
+        .toggle-word {
+          
+          font-size: 1rem;
+        }
   }
 
   @media (max-width: 768px) {

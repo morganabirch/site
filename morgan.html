@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleDescription(id) {
+  const box = document.getElementById(id);
+  if (box) {
+    box.classList.toggle("hidden");
+    console.log("Toggled:", id, "Now hidden?", box.classList.contains("hidden"));
+  }
+}
+</script>
+
 <body>
   <header class="site-banner">
     <!-- Video background inside header -->
@@ -28,8 +38,17 @@
   </header>
 
   <main>
+    
+    <p class="description-trigger">
+            <span class="toggle-word" onclick="toggleDescription('desc1')">DESCRIPTION</span>.
+    </p>
+    <!--<div id="desc1" class="description-box hidden">
+        This is a cat lounging in the sun. It’s fluffy and looks relaxed.
+    </div>-->
+
     <!-- Carousel wrapper -->
     <div class="carousel">
+        
     <!-- Slides -->
     <div class="carousel-slide">
         <video autoplay muted loop playsinline>
@@ -64,6 +83,9 @@
         <div class="overlay"><span>Project 6</span></div>
       </div>
 
+      <div id="desc1" class="description-box hidden">
+          Morgan is an ongoing project utlizing my own deep learning algorithm and my own small language data sets. As the viewer moves around the room, their eyes will track you. Upon meeting you Morgan will decide whether you appear like a man or woman or something else to and respond accordingly.
+      </div>
       <!-- Controls on left/right -->
       <button class="carousel-btn prev">‹</button>
       <button class="carousel-btn next">›</button>
@@ -76,5 +98,6 @@
 
   <!-- External JS -->
   <script src="carousel.js"></script>
+  <script src="toggleBox.js"></script>
 </body>
 </html>

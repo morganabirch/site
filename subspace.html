@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleDescription(id) {
+  const box = document.getElementById(id);
+  if (box) {
+    box.classList.toggle("hidden");
+    console.log("Toggled:", id, "Now hidden?", box.classList.contains("hidden"));
+  }
+}
+</script>
+
 <body>
   <header class="site-banner">
     <!-- Video background inside header -->
@@ -28,6 +38,9 @@
   </header>
 
   <main>
+    <p class="description-trigger">
+            <span class="toggle-word" onclick="toggleDescription('desc1')">DESCRIPTION</span>.
+    </p>
     <!-- Carousel wrapper -->
     <div class="carousel">
     <!-- Slides -->
@@ -57,6 +70,10 @@
         <div class="overlay"><span>Project 6</span></div>
       </div>
 
+      <div id="desc1" class="description-box hidden">
+          Subspace Envoy is a project develop in collaboration with Pioneer Works, NY. The work creates a holographic projection of MyQ, a gender neutral being that is capable of seeing when a person enters its field of view and then has a discussion with them about video games, patriarchy, the survelliance state, disability, and hereditary trauma. MyQ is capable of hearing the viewer and repeating back a branching dialogue based from learned behaviors.
+      </div>
+      
       <!-- Controls on left/right -->
       <button class="carousel-btn prev">‹</button>
       <button class="carousel-btn next">›</button>

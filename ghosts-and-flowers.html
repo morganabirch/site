@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleDescription(id) {
+  const box = document.getElementById(id);
+  if (box) {
+    box.classList.toggle("hidden");
+    console.log("Toggled:", id, "Now hidden?", box.classList.contains("hidden"));
+  }
+}
+</script>
+
 <body>
   <header class="site-banner">
     <!-- Video background inside header -->
@@ -28,6 +38,9 @@
   </header>
 
   <main>
+    <p class="description-trigger">
+            <span class="toggle-word" onclick="toggleDescription('desc1')">DESCRIPTION</span>.
+    </p>
     <!-- Carousel wrapper -->
     <div class="carousel">
     <!-- Slides -->
@@ -75,6 +88,10 @@
       <div class="carousel-slide">
           <img src="img/gf-9.webp" alt="Project 6">
         <div class="overlay"><span>Project 6</span></div>
+      </div>
+
+      <div id="desc1" class="description-box hidden">
+          Ghosts and Flowers is a video game that is a cross between a visual novel and a third person exploration. The games themes center around the reliance of disabled bodies on able bodied people and how these networks of care are often short-circuited by the state, class, socio-economic, and cultural causes.
       </div>
 
       <!-- Controls on left/right -->

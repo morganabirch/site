@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleDescription(id) {
+  const box = document.getElementById(id);
+  if (box) {
+    box.classList.toggle("hidden");
+    console.log("Toggled:", id, "Now hidden?", box.classList.contains("hidden"));
+  }
+}
+</script>
+
 <body>
   <header class="site-banner">
     <!-- Video background inside header -->
@@ -28,6 +38,9 @@
   </header>
 
   <main>
+    <p class="description-trigger">
+            <span class="toggle-word" onclick="toggleDescription('desc1')">DESCRIPTION</span>.
+    </p>
     <!-- Carousel wrapper -->
     <div class="carousel">
       <!-- Slides -->
@@ -59,6 +72,10 @@
       <div class="carousel-slide">
           <img src="img/eye-dr.webp" alt="Project 6">
         <div class="overlay"><span>Project 6</span></div>
+      </div>
+
+      <div id="desc1" class="description-box hidden">
+          These ongoing drawings serve as an index of my battle and ongoing struggle with Multiple Sclerosis. They show an erosion of ability and a slipping of skill as parts of my body stop responding in expected ways due to the short circuiting of my nervous system.
       </div>
 
       <!-- Controls on left/right -->
